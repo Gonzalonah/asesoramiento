@@ -1,9 +1,8 @@
-/*const HtmlWebpackPlugin = require('html-webpack-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const { Template } = require('webpack');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
-*/
 
 module.exports={
    entry: './index.js',
@@ -16,10 +15,10 @@ module.exports={
     },
     module:{
         rules: [
-            /*{
+            {
             test: /\.css$/i,
             use:[MiniCssExtractPlugin.loader,"css-loader"],
-            },
+            },/*
             {
                 type: "asset",
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
@@ -34,11 +33,15 @@ module.exports={
                         plugins:["@babel/plugin-proposal-optional-chaining"]
                     },
                 },
-            }
+            },
+            {
+                test: /\.html$/i,
+                loader: "html-loader",
+              },
         ],
     },
-    /*plugins:[
-        new HtmlWebpackPlugin( {template: "index.html"},),
+    plugins:[
+        new HtmlWebpackPlugin( {template: "scr/index.html"},),
         new MiniCssExtractPlugin(),
-    ],*/
+    ],
 };
