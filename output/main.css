@@ -46,4 +46,12 @@ h3#lso{
     text-align-last: center;
 }
 
+.header{
+    width: 40px;
+}
+#headers{
+    height: 48px;
+    background-color: #4051b5;
+}
+
 
