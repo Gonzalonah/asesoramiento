@@ -41,7 +41,41 @@ module.exports={
         ],
     },
     plugins:[
-        new HtmlWebpackPlugin( {template: "./src/index.html"},),
+        new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            new HtmlWebpackPlugin( {
+            filename: "st.html", 
+            template: "./src/st.html"},),
+            /*new HtmlWebpackPlugin( {
+            filename: "lt.html", 
+            template: "./src/lt.html"},),
+            new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            template: "./src/index.html"},),
+                        new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            template: "./src/index.html"},),
+                        new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            template: "./src/index.html"},),
+                        new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            template: "./src/index.html"},),
+                        new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            template: "./src/index.html"},),
+                        new HtmlWebpackPlugin( {
+            filename: "index.html", 
+            template: "./src/index.html"},),
+            template: "./src/index.html"},),
+
+            */
         new MiniCssExtractPlugin(),
     ],
 };

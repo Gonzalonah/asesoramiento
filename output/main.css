@@ -1,4 +1,49 @@
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
   \*****************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (1) ***!
+  \*********************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap);
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (2) ***!
+  \*********************************************************************/
+#logo{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px 10px;
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 50%;
+    position:relative;
+    left: 45%;
+}
+
+.list{
+    position:relative;
+    left: 38%;
+    width: 281px;
+}
+.anclas{
+    text-decoration: none;
+    color: #000;
+}
+ul{
+    list-style: none;    
+    font-family: "Open Sans", sans-serif;
+}
+h3{
+    font-family: 'Sedgwick Ave', cursive;
+    letter-spacing: 2px;
+}
+h3#lso{
+    width: 240px;
+    text-align-last: center;
+}
+
 
