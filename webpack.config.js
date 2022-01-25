@@ -5,7 +5,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports={
-   entry: './index.js',
+   entry: './src/index.js',
     output: {
         path: path.resolve(__dirname, './output'),
         filename: 'main.js',
@@ -18,11 +18,11 @@ module.exports={
             {
             test: /\.css$/i,
             use:[MiniCssExtractPlugin.loader,"css-loader"],
-            },/*
+            },
             {
                 type: "asset",
                 test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            },*/
+            },
             {
                 test: /\.js$/,
                 exclude: /node_module/,
@@ -41,7 +41,7 @@ module.exports={
         ],
     },
     plugins:[
-        new HtmlWebpackPlugin( {template: "scr/index.html"},),
+        new HtmlWebpackPlugin( {template: "./src/index.html"},),
         new MiniCssExtractPlugin(),
     ],
 };
