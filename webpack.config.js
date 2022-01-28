@@ -5,14 +5,23 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports={
-   entry: './src/index.js',
+    entry:'./src/stheader.js',
+    output:{
+        path: path.resolve(__dirname,'./output'),
+        filename: 'st.js'
+    },
+    entry: {
+       home: './src/index.js',
+       st: './src/sthead.js',
+    },
     output: {
         path: path.resolve(__dirname, './output'),
-        filename: 'main.js',
+        filename: '[name].js',
         },
     devServer:{
         port: 1717
     },
+  
     module:{
         rules: [
             {
