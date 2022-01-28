@@ -12,7 +12,7 @@ module.exports={
     },
     entry: {
        home: './src/index.js',
-       st: './src/sthead.js',
+       st: './src/stheader.js',
     },
     output: {
         path: path.resolve(__dirname, './output'),

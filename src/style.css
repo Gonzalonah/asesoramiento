@@ -17,7 +17,7 @@
 
 .list{
     position:relative;
-    left: 38%;
+    left: 42%;
     width: 281px;
 }
 .anclas{
@@ -29,12 +29,11 @@ ul{
     font-family: "Open Sans", sans-serif;
 }
 h3{
-    font-family: 'Sedgwick Ave', cursive;
-    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+
 }
 h3#lso{
-    width: 240px;
-    text-align-last: center;
+    width: 340px;
 }
 
 .header{
@@ -76,6 +75,8 @@ left:30%;
 top: 25px;
 }
 #lio, #lid{
+    padding-top: 4px;
+    height: 30px;
     border: 5px ;
     border-color: rgb(30, 30, 44);
     background:rgba(45, 45, 58, 0.678);
@@ -86,3 +87,4 @@ left:5px;
 width: 28%;
 top: 85px;
 }
+

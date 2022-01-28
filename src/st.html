@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sistemas tecnológicos</title>
     <link rel="shortcut icon" href="Recurso 1.svg">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+ 
 
 </head>
 <body class="body">
     <div id="stheader">
         <header id = "stheaders">
-            <img src = "Recurso 2.svg" class = "header">
+            <img src = "Recurso 2.svg" class = "header" id="header">
             <section class="materia">Sistemas Tecnológicos</section>
         </header>
     </div>
@@ -28,8 +28,6 @@
          <li id="body" class = "text">Body</li>
          <li id="eti" class="text">Etiquetas de texto</li>
          <li id="lyt" class = "text">Listas y tablas</li>
-         <li id="list" class = "text">Listas</li>
-         <li id="tabl" class = "text">Tablas</li>
 
         </ul> 
         
@@ -220,12 +218,44 @@
         <p class="text">
             Para hacer listas y/o tablas las podemos hacer con html basico. 
         </p>
-        <div id="lists">
+        <div>
         <h4 class="text">Listas</h4>
         <p class="text">
             Cuando hablamos de listas en HTML, estamos hablando de dos(2) tipos:<br>
-            <span id="lio">- Listas ordenadas;</span><br>
-            <span id="lid">- Listas desornadas(Listas sin orden).</span>
+            <div id="lio"  class="text">- Listas ordenadas;</div>
+            <div id="lists" class="text" >
+                <ol>
+                <li>Juan</li>
+                <li>Carlos</li>
+                <li>Jose</li>
+                </ol>
+                <p class="text"> Para poder realizar esto nosotros debemos colocar la siguiente estructura. <br>
+                    <code>
+                        &lt;ol&gt;<br>
+                        &lt;li&gt;1° Item &lt;/li&gt;<br>
+                        &lt;li&gt;2° Item &lt;/li&gt;<br>
+                        &lt;li&gt;3° Item &lt;/li&gt;<br>
+                        &lt;li&gt;N° Item &lt;/li&gt;<br>
+                        &lt;/ol&gt;
+                </code><br> Siendo &lt;li&gt; los items de la lista y &lt;ol&gt; lo que define la lista como una ordenada. Se pueden modificar el estilo del item con CSS.</p>
+            </div>
+            <div id="lid" class="text">- Listas desornadas(Listas sin orden).</div>
+            <div id="list" class="text">
+                <ul>
+                    <li>Juan</li>
+                    <li>Carlos</li>
+                    <li>Jose</li>
+                </ul>
+                <p class="text"> Para poder realizar esto nosotros debemos colocar la siguiente estructura. <br>
+                    <code>
+                        &lt;ul&gt;<br>
+                        &lt;li&gt;1° Item &lt;/li&gt;<br>
+                        &lt;li&gt;2° Item &lt;/li&gt;<br>
+                        &lt;li&gt;3° Item &lt;/li&gt;<br>
+                        &lt;li&gt;N° Item &lt;/li&gt;<br>
+                        &lt;/ul&gt;
+                </code><br> Siendo &lt;li&gt; los items de la lista y &lt;ol&gt; lo que define la lista como una sin ordenada. Se pueden modificar el estilo del item con CSS.</p>
+            </div>
         </p>
         </div>
         <div id="tabls">

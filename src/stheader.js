@@ -1,7 +1,7 @@
 import $ from "jQuery";
 
 //variable
-var h =0,h1 =0,w =0,e =0,es =0,ht =0,he =0,b =0,et =0,ly =0,l =0,t =0;
+var h =0,h1 =0,w =0,e =0,es =0,ht =0,he =0,b =0,et =0,ly =0,l =0,t =0,lis=0,lista=0;
 
 //hidens & showders
 $(document).ready(function(){
@@ -15,7 +15,9 @@ $(document).ready(function(){
     $("#etis").hide();
     $("#lyts").hide();
 });
-
+$(document).on('click', '#header', function(){
+    window.location.href="./index.html";
+});
     $(document).on('click', '#home', function(){
         if (h==1){
             $("#homes").show(1500);
@@ -199,6 +201,8 @@ $(document).ready(function(){
             $("#heads").hide(1500);
             $("#bodys").hide(1500);
             $("#etis").hide(1500);
+            $("#lists").hide();
+            $("#list").hide(1500);
             ly=0;
         }else{
             $("#lyts").hide(1500);
@@ -206,14 +210,22 @@ $(document).ready(function(){
             ly=1;
         }  
     });
-    $(document).on('click', '#list', function(){
-        if (l==0){
+    $(document).on('click', '#lio', function(){
+        if (lis==0){
             $("#lists").show(1500);
-            l=0;
+            lis=0;
         }else{
             $("#lists").hide(1500);
-            $("#homes").show(1500);
-            l=1;
+            lis=1;
+        }  
+    });
+    $(document).on('click', '#lid', function(){
+        if (lista==0){
+            $("#list").show(1500);
+            lista=1;
+        }else{
+            $("#list").hide(1500);
+            lista=0;
         }  
     });
     $(document).on('click', '#tabl', function(){
@@ -226,3 +238,7 @@ $(document).ready(function(){
             t=1;
         }  
     });
+
+
+
+
