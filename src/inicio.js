@@ -4,11 +4,11 @@ import ReactDOM from "react-dom"
 export default function nav (){
     ReactDOM.render(
     <>
-         <aside className="logo">
+         <div>
              <a id="about">
                  <img src={log} id="logo"></img>
              </a>
-         </aside>
+         </div>
          <>
             <h3 className="list" id="sistemas">Sistemas tecnológicos</h3>
 

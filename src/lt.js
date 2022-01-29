@@ -1,12 +1,29 @@
-import $ from "jQuery";
-import foot from "./footer.js";
+import ReactDOM from "react-dom";
+import React from "react";
+import $ from "jquery";
 
-//variable
+//----------------------------CSS----------------------------
+import "./style.css";
+
+//--------------------------MODULES--------------------------
+import foote from "./footer.js";
+import head from "./header.js";
+import nav from "./nav.js";
+import main from "./main.js";
+
+//---------------------------CALLS---------------------------
+foote();
+head();
+nav();
+main();
+//---------------------------OTHER---------------------------
+//.........................variable..........................
 var h =0,h1 =0,w =0,e =0,es =0,ht =0,he =0,b =0,et =0,ly =0,l =0,t =0,lis=0,lista=0,t1=0;
 
-//hidens & showders
+//.....................hidens & showders.....................
 
 $(function(){
+    //$("#homes").hide();
     $("#htmls").hide();
     $("#wis").hide();
     $("#ents").hide();
@@ -17,10 +34,11 @@ $(function(){
     $("#etis").hide();
     $("#lyts").hide();
     $("#tabls").hide();
+    $("#pape").hide();
 });
 
 $(document).on('click', '#header', function(){
-    window.location.href="./index.html";
+    window.location.href="../index.html";
 });
     $(document).on('click', '#home', function(){
         if (h==1){
@@ -259,5 +277,15 @@ $(document).on('click', '#header', function(){
         }  
     });
 
-// Functions
-foot();
+    $(document).on('mouseenter', '#papel', function(){
+        $("#pape").show();
+    });
+    $(document).on('mouseleave', '#papel', function(){
+        $("#pape").hide();
+    });
+    $(document).on('mouseenter', '#lapiz', function(){
+        $("#lape").show();
+    });
+    $(document).on('mouseleave', '#lapiz', function(){
+        $("#lape").hide();
+    });

@@ -1,0 +1,7 @@
+Lineas normas IRAM
+	Tipo de linea	Espesor		Aplicacion
+A) 	Continua	1 		Contornos y aristas visibles
+b)	Continua	0.2		Cotas y aux
+c)	Trasos 		0.05		Contornos y aristas ocultos
+d)	Traso corto	0.2		Eje de simetria y lineas de centros de circunferencias. 
+	y largo

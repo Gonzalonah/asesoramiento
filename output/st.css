@@ -13,13 +13,16 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    border: 5px;
     margin: 10px 10px;
-    background-color: rgba(0, 0, 0, 0.774);
+}
+.logo{
+    width: 100px;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.527);
+    border-radius: 50%;
     position:relative;
     left: 45%;
 }
-
 
 .list{
     position:relative;
@@ -93,18 +96,10 @@ left:5px;
 width: 28%;
 top: 85px;
 }
-#stfoot{
+footer{
     position: absolute;
-top: 90%;
-    height:100px;
-    width: 98%;
+    bottom: 5px;
+    height:54px;
     background-color: rgb(22, 32, 44);
-}
-#redes{
- position: absolute;
- left:50%;
-}
-#redes>a>img{
-  width:25px;
 }
 

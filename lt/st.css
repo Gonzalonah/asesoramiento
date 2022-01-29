@@ -1,14 +1,5 @@
-/*!*****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css ***!
-  \*****************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap);
-/*!*********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (1) ***!
-  \*********************************************************************/
 @import url(https://fonts.googleapis.com/css2?family=Sedgwick+Ave&display=swap);
-/*!*********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/style.css (2) ***!
-  \*********************************************************************/
 #logo{
     width: 80px;
     height: 80px;
@@ -44,24 +35,27 @@ h3#lso{
 
 .header{
     width: 40px;
-    margin: 4px 40px;
+    margin: 10px 40px;
 
 }
 .materia{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    top: -49px;
-    left: 200px;
+    top: -59px;
+    left: 25%;
     font-size: 30px;
-    width: 300px;
+    width: 400px;
     color:white;
 }
 #stheader{
-    height: 50px;
+    height: 55px;
     background-color: #4051b5;
     margin: -6px;
     padding-left: 13%;
     box-shadow: 1px 9px rgba(70, 69, 163, 0.301);
+}
+#stheaders{
+margin-top:5px;
 }
 .body{
     background-color: rgb(30, 30, 44);
@@ -74,11 +68,11 @@ h3#lso{
 #htl,#heading,#htm{
     width: 90vh;
 }
-#stmain{
+#stmain,#main{
     width:60%;
-position: relative;
-left:30%;
-top: 25px;
+    position: relative;
+    left:30%;
+    top: 25px;
 }
 #lio, #lid{
     padding-top: 4px;
@@ -87,24 +81,42 @@ top: 25px;
     border-color: rgb(30, 30, 44);
     background:rgba(45, 45, 58, 0.678);
 }
-#stnav{
+#stnav,#nav{
 position: fixed;
 left:5px;
 width: 28%;
 top: 85px;
 }
-#stfoot{
-    position: absolute;
-top: 90%;
+#stfoot, #foot{
+    position: fixed;
+    bottom: 0px;
     height:100px;
     width: 98%;
     background-color: rgb(22, 32, 44);
+    margin-left: 1%;
 }
 #redes{
  position: absolute;
- left:50%;
+ left:70%;
+ bottom: 10px;
 }
 #redes>a>img{
   width:25px;
+}
+#copy{
+    position: absolute;
+    left: 30%;
+    top: 30px;
+    align-content: center;
+}
+#copy>.text{
+    color: #3c3d41;
+}
+#tlineas{
+    color:rgb(22, 32, 44)
+}
+#tline{
+    text-transform: uppercase;
+    font-weight: bold;
 }
 

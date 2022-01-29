@@ -28,7 +28,6 @@
          <li id="body" class = "text">Body</li>
          <li id="eti" class="text">Etiquetas de texto</li>
          <li id="lyt" class = "text">Listas y tablas</li>
-
         </ul> 
         
     </div>
@@ -219,7 +218,8 @@
             Para hacer listas y/o tablas las podemos hacer con html basico. 
         </p>
         <div>
-        <h4 class="text">Listas</h4>
+        <h4 class="text" id="x">Listas</h4>
+        <div id="x1">
         <p class="text">
             Cuando hablamos de listas en HTML, estamos hablando de dos(2) tipos:<br>
             <div id="lio"  class="text">- Listas ordenadas;</div>
@@ -239,13 +239,14 @@
                         &lt;/ol&gt;
                 </code><br> Siendo &lt;li&gt; los items de la lista y &lt;ol&gt; lo que define la lista como una ordenada. Se pueden modificar el estilo del item con CSS.</p>
             </div>
-            <div id="lid" class="text">- Listas desornadas(Listas sin orden).</div>
+            <div id="lid" class="text">- Listas desornadas (Listas sin orden).</div>
             <div id="list" class="text">
-                <ul>
-                    <li>Juan</li>
-                    <li>Carlos</li>
-                    <li>Jose</li>
-                </ul>
+
+                    <li>Cuaderno</li>
+                    <li>Lapicera</li>
+                    <li>Goma</li>
+                    <li>Pendrive</li>
+
                 <p class="text"> Para poder realizar esto nosotros debemos colocar la siguiente estructura. <br>
                     <code>
                         &lt;ul&gt;<br>
@@ -254,17 +255,58 @@
                         &lt;li&gt;3° Item &lt;/li&gt;<br>
                         &lt;li&gt;N° Item &lt;/li&gt;<br>
                         &lt;/ul&gt;
-                </code><br> Siendo &lt;li&gt; los items de la lista y &lt;ol&gt; lo que define la lista como una sin ordenada. Se pueden modificar el estilo del item con CSS.</p>
+                </code><br> Siendo &lt;li&gt; los items de la lista y &lt;ol&gt; lo que define la lista como una sin ordenada. Se pueden modificar el estilo del item con CSS.(Hay que tener que cuidado con la version de navegador en la que se este trabajando, ya que puede que no te lea la etiqueta &lt;ul&gt;)</p>
             </div>
-        </p>
         </div>
-        <div id="tabls">
+    </div>
+        <div>
+            <h4 class="text" id="tabl">Tablas</h4>
+            <div class="text" id="tabls">
+                <p>  Cuando hablamos de tablas en HTML nos referimos a algo como lo siguiente:</p>
+                <table>
+                    <tr>
+                        <th>Fila 1 Columna 1</th>
+                        <th>Fila 1 Columna 2</th>
+                    </tr>
+                    <tr>
+                        <td>Fila 2 Columna 1</td>
+                        <td>Fila 2 Columna 2</td>
+                    </tr>
+                </table>
+              <p>Donde se pueden definir las siguientes etiquetas:</p>
+                <li> etiquetatable determina el comienzo y final de una tabla.</li>
+                <li>La etiqueta tr representa a las columnas de una tabla.</li>
+                <li>La etiqueta td representa a las filas de una tabla.</li>
+                <li> La etiqueta th representa a las filas de una tabla, pero a diferencia de td, representa un encabezado de tabla .</li>
+                <p>Y nuestro codigo seria algo asi:</p>
+                <code>
+                    &lt;table&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;th&gt;Fila 1 Columna 1&lt;/th&gt;<br>
+                        &lt;th&gt;Fila 1 Columna 2&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;tr&gt;<br>
+                        &lt;th&gt;Fila 2 Columna 1&lt;/th&gt;<br>
+                        &lt;th&gt;Fila 2 Columna 2&lt;/th&gt;<br>
+                    &lt;/tr&gt;<br>
+                    &lt;/table&gt;
+                </code>
 
+            </div>
         </div>
     </div>
 
 </div>
     
-    <div id="stfoot"></div>
+   <!-- <div id="stfoot">
+        <section className="footer">
+            <section id="copy"> Copyright &copy; 2022 Gonzalo Nahuel Rolón. All rights reserved</section>
+            <section id="redes">
+                    <a href="https://twitter.com/StupidBoy171"><img src="twitter.svg"></img></a>
+                    <a href="https://www.instagram.com/gonzalo.ok17"><img src="instagram.svg"></img></a>
+            </section>
+    </section>
+    </div>
+    -->
 </body>
 </html>

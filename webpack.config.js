@@ -5,18 +5,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 
 module.exports={
-    entry:'./src/stheader.js',
-    output:{
-        path: path.resolve(__dirname,'./output'),
-        filename: 'st.js'
-    },
     entry: {
-       home: './src/index.js',
-       st: './src/stheader.js',
+       st: './src/lt.js',
     },
     output: {
-        path: path.resolve(__dirname, './output'),
-        filename: '[name].js',
+        path: path.resolve(__dirname, './lt'),
+        filename: 'lt.js',
         },
     devServer:{
         port: 1717
@@ -50,16 +44,10 @@ module.exports={
         ],
     },
     plugins:[
-        new HtmlWebpackPlugin( {
-            filename: "index.html", 
-            template: "./src/index.html"},),
             new HtmlWebpackPlugin( {
-            filename: "st.html", 
-            template: "./src/st.html"},),
-            /*new HtmlWebpackPlugin( {
             filename: "lt.html", 
             template: "./src/lt.html"},),
-            new HtmlWebpackPlugin( {
+            /*new HtmlWebpackPlugin( {
             filename: "index.html", 
             template: "./src/index.html"},),
             template: "./src/index.html"},),

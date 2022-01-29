@@ -4,16 +4,13 @@
     width: 80px;
     height: 80px;
     border-radius: 50%;
+    border: 5px;
     margin: 10px 10px;
-}
-.logo{
-    width: 100px;
-    height: 100px;
-    background-color: rgba(0, 0, 0, 0.527);
-    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.774);
     position:relative;
     left: 45%;
 }
+
 
 .list{
     position:relative;
@@ -38,24 +35,27 @@ h3#lso{
 
 .header{
     width: 40px;
-    margin: 4px 40px;
+    margin: 10px 40px;
 
 }
 .materia{
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    top: -49px;
-    left: 200px;
+    top: -59px;
+    left: 25%;
     font-size: 30px;
-    width: 300px;
+    width: 400px;
     color:white;
 }
 #stheader{
-    height: 50px;
+    height: 55px;
     background-color: #4051b5;
     margin: -6px;
     padding-left: 13%;
     box-shadow: 1px 9px rgba(70, 69, 163, 0.301);
+}
+#stheaders{
+margin-top:5px;
 }
 .body{
     background-color: rgb(30, 30, 44);
@@ -68,11 +68,11 @@ h3#lso{
 #htl,#heading,#htm{
     width: 90vh;
 }
-#stmain{
+#stmain,#main{
     width:60%;
-position: relative;
-left:30%;
-top: 25px;
+    position: relative;
+    left:30%;
+    top: 25px;
 }
 #lio, #lid{
     padding-top: 4px;
@@ -81,10 +81,41 @@ top: 25px;
     border-color: rgb(30, 30, 44);
     background:rgba(45, 45, 58, 0.678);
 }
-#stnav{
+#stnav,#nav{
 position: fixed;
 left:5px;
 width: 28%;
 top: 85px;
 }
-
+#stfoot, #foot{
+    position: fixed;
+    bottom: 0px;
+    height:100px;
+    width: 98%;
+    background-color: rgb(22, 32, 44);
+    margin-left: 1%;
+}
+#redes{
+ position: absolute;
+ left:70%;
+ bottom: 10px;
+}
+#redes>a>img{
+  width:25px;
+}
+#copy{
+    position: absolute;
+    left: 30%;
+    top: 30px;
+    align-content: center;
+}
+#copy>.text{
+    color: #3c3d41;
+}
+#tlineas{
+    color:rgb(22, 32, 44)
+}
+#tline{
+    text-transform: uppercase;
+    font-weight: bold;
+}

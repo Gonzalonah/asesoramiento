@@ -2,9 +2,8 @@
   "name": "asesoramiento",
   "version": "1.0.0",
   "description": "Hi this is a proyect for education",
-  "main": "index.js",
   "scripts": {
-    "s": "servor output st.html 8080 --reload",
+    "s": "servor lt lt.html 8080 --reload",
     "build": "webpack --mode production",
     "dev": "webpack --mode development --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
