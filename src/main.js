@@ -1,7 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import head from './head.jpg';
-import cuerpo from './cuerpo.png';
 import autocad from './autocad.jpg';
 import lineas from'./lineas.png'
 
@@ -19,10 +17,12 @@ ReactDOM.render(
     </p>
    </div>
    <div id="htmls">
-    <h2 className="text">Dibujo Técnico</h2>
+    <h2 className="text">PSeInt</h2>
     <h3 className="text">Introducción</h3>
     <p className="text">
-    El dibujo técnico es un sistema de representación gráfica de diversos tipos de objetos, con el propósito de proporcionar información suficiente para facilitar su análisis, ayudar a elaborar su diseño y posibilitar su futura construcción y mantenimiento.
+    Para poder introducirnos en programación nosotros debemos tener estos dos conocimientos previos.
+    <br></br><span id="head">-Teoria sobre las tablas de verdad;</span>
+    <br></br><span id="body">-Teoria sobre los diagramas de Venn.</span>
     </p>
    </div>
     <div id="wis">
@@ -83,64 +83,76 @@ ReactDOM.render(
         <tr><td>Eje de simetría</td><td>Trazos largos y cortos</td><td>0.2</td><td>Por lo general se usan colores verdes</td></tr>        
     </table>
     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*Cabe resaltar que los colores son opcionales y uno puede elegir los de su preferencia.
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    </p>
+   </div>
+   
+   <div id="htms">
+    <h4 className="text">Tablas de verdad</h4>
+    <p className = "text"> 
+    Las tablas de verdad son, por una parte, uno de los métodos más sencillos y conocidos de la lógica formal, pero al mismo tiempo también uno de los más poderosos y claros. Entender
+bien las tablas de verdad es, en gran medida, entender bien a la lógica formal misma. Esta forma de visualizar los problemas, hace que se nos haga más fácil entender el pensamiento lógico de las computadoras.
+        <br></br>
+    -Componentes de las tablas <br></br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Variables: Estos son aquellos datos que pueden variar, tal como dice el nombre. Pueden ser personas, datos o cualquier cosa que uno pueda imaginar.<br></br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Valores posibles: Estas son las opciones posibles por las que pueden pasar las variables. Estos son dos: Verdades y Falsos. Esto corre bajo una regla 2<sup>n</sup>, dónde la n corresponde al número de variables proposicionales y 2 los valores posibles.<br></br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Lógica combinatoria: Esta es la lógica por la cual corren los resultados de las variables y sus posibles valores, estos son 2, "Y" y "O".<br></br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Disyunción (^ - Y)</u></b>
+        <br></br>
+        Este proceso de lógica te da la condición de que mientras todos los posibles valores sean verdaderos, la resultante va a ser verdadera. 
+    <table className="w3-table-all">
+    <thead className='tline'><tr><td>P</td><td>Q</td><td>^</td></tr></thead>
+    <tbody className='tline'><tr><td>V</td><td>V</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>V</td><td>F</td><td>F</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>V</td><td>F</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>F</td><td>F</td></tr></tbody>
+    </table>
+    &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Conjunción (v - O)</u></b>
+        <br></br>
+        Este proceso de lógica te da la condición de que mientras alguno de los posibles valores sean verdaderos, la resultante va a ser verdadera.
+    <table className="w3-table-all">
+    <thead className='tline'><tr><td>P</td><td>Q</td><td>v</td></tr></thead>
+    <tbody className='tline'><tr><td>V</td><td>V</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>V</td><td>F</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>V</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>F</td><td>F</td></tr></tbody>
+    </table>
+        <br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Condicional (=&gt; - Si ... entonces ... )</u></b>
+        <br></br>
+        Este proceso de lógica te da la condición de que mientras la primer variable sea VERDADERA y la segunda FALSA entonces el resultado es FALSO, mientras que todos los demás son VERDADEROS. 
+    <table className="w3-table-all">
+    <thead className='tline'><tr><td>P</td><td>Q</td><td>=&gt;</td></tr></thead>
+    <tbody className='tline'><tr><td>V</td><td>V</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>V</td><td>F</td><td>F</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>V</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>F</td><td>V</td></tr></tbody>
+    </table>
+        <br></br>
+        &nbsp;&nbsp;&nbsp;&nbsp;<b><u>Bicondicional (&lt;=&gt; - ... Si y solo si ...)</u></b>
+        <br></br>
+        Este proceso de lógica te da la condición de que mientras las dos variable sea <u>iguales</u> entonces el resultado es VERDADERO, mientras que todos los demás son FALSOS. 
+    <table className="w3-table-all">
+    <thead className='tline'><tr><td>P</td><td>Q</td><td>&lt;=&gt;</td></tr></thead>
+    <tbody className='tline'><tr><td>V</td><td>V</td><td>V</td></tr></tbody>
+    <tbody className='tline'><tr><td>V</td><td>F</td><td>F</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>V</td><td>F</td></tr></tbody>
+    <tbody className='tline'><tr><td>F</td><td>F</td><td>V</td></tr></tbody>
+    </table>
+        <br></br>
+        <b id="vol">Volver</b><span id="z">🔄</span>
     </p>
    </div>
    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-   <div id="htms">
-    <h4 className="text">Html</h4>
-    <p className = "text"> 
-        Este contenedor es el contenedor general del estándar web, el encargado de posicionar la web en un “radar” para que nuestro sitio esté más arriba en los resultados de búsqueda. En este vamos a configurar el lenguaje con el atributo lang= ”idioma”, puede ser español (es), inglés (en), entre otros.
-        <br></br>
-        Dentro de este van a estar ubicados el head y el body, la cabecera y el cuerpo del mismo.
-   
-    </p>
-   </div>
-   <div id="heads">
-    <h4 className="text">Head</h4>
-    <p className = "text"> 
-        Este contenedor es la cabecera de nuestra pagina, acá van a estar todos los datos, metadatos y referencias a otros objetos( archivos java, ajax, css y demás). También tendremos el nombre de nuestra página.
-        <br></br>
-        <img src={head} alt="head cabecera pestaña" id="heading"></img>
-       <br></br> Para cambiarlo vamos a usar la etiqueta &lt;title&gt;Recibidos (47) - gnrolon@itel.edu.ar &lt;/title&gt;.
-        <br></br><br></br>Para poner el logo/ icono de nuestra página lo pondremos así
-        &lt;link rel="shortcut icon" href="img/favicon.png"&gt; y este tiene que ser una imagen de máximo 10px*10px.  Para hacer referencia a otro objetos
-        &lt;link rel="stylesheet" href="css/estilos.css"&gt; o tambien &lt;script defer src=''script.js''&gt;&lt;/script&gt;.
-        <br></br><br></br>Si se quiere poner el autor o algún metadato relevante se escribe&lt;meta name="author" content="Gonzalo Nahuel Rolón"&gt;.
-        <br></br></p>
-        <p className="text">Ya que todos los procesadores de html funcionan en un inglés genérico van a caracteres que no los pueda procesar, pero para corregir ese “error” vamos a poner esto <code>&lt;meta charset="utf-8"&gt;</code></p>
-   </div>
-   <div id="bodys">
-        <h4 className="text">Body</h4>
-    <p className = "text"> 
-        Este es nuestro cuerpo, acá va a estar nuestra interfaz gráfica, donde se va a ver todo lo que pongamos en él.  Hay muchas etiquetas pero vamos a empezar por las más básicas.<br></br>
-        
-    </p>
-   </div>
-   <div id="etis">
-    <h3 className="text">Etiquetas de texto:</h3>
-    <h5 className="text">Etiquetas H</h5>
-    <p className="text">En todas las etiquetas H son requeridas etiquetas de apertura y de cierre, o sea 
-        <code>&lt;h1&gt;hola&lt;/h1&gt;</code>
-    </p>
-    <h5 className="text">H1: Etiqueta de títulos</h5>
-    <p className="text">
-        El H1 es una etiqueta que se utiliza para identificar aquellas frases que conforman el título principal de un contenido de una página web. Cabe destacar que cada página de tu website, por ejemplo, cada entrada de blog, debe tener sus propios heading tags (h1, h2, h3, h4) configurados. Particularmente, el H1 debe resumir en una frase todo lo que representa la página.<br></br>
-        Tus heading tags H1 deben personalizarse para el contenido de cada página de tu sitio web. Es decir, lo recomendable es que los H1 permitan que los rastreadores conecten con el núcleo central de tu artículo y no, con tu empresa por ejemplo, ya que una práctica errónea también es la de colocar el nombre de la empresa como H1 en todas las entradas de blog o páginas inherentes.
-   
-    </p>
-
-    <h5 className="text">Etiqueta P</h5>
-    <p className="text">
-        La etiqueta &lt;p&gt; en HTML define un párrafo. Estas tienen etiqueta de apertura y cierre. Por lo tanto, todo lo mencionado en &lt;p&gt; y &lt;/p&gt; se trata como un párrafo. La mayoría de los navegadores leen una línea como un párrafo, incluso si no usamos la etiqueta de cierre, es decir, &lt;/p&gt;, pero esto puede generar resultados inesperados al momento de la visualización. Entonces, es una buena convención y debemos usar la etiqueta de cierre.
-    </p>
-    
-    </div>
+   <br></br>
+   <br></br>
+   <br></br>
    </>,
     document.getElementById("main")
  )}

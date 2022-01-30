@@ -6,11 +6,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports={
     entry: {
-       st: './src/lt.js',
+       st: './src/pr.js',
     },
     output: {
-        path: path.resolve(__dirname, './lt'),
-        filename: 'lt.js',
+        path: path.resolve(__dirname, './output/pr'),
+        filename: 'pr.js',
         },
     devServer:{
         port: 1717
@@ -45,33 +45,12 @@ module.exports={
     },
     plugins:[
             new HtmlWebpackPlugin( {
-            filename: "lt.html", 
-            template: "./src/lt.html"},),
+            filename: "pr.html", 
+            template: "./src/pr.html"},),
             /*new HtmlWebpackPlugin( {
             filename: "index.html", 
             template: "./src/index.html"},),
             template: "./src/index.html"},),
-                        new HtmlWebpackPlugin( {
-            filename: "index.html", 
-            template: "./src/index.html"},),
-            template: "./src/index.html"},),
-                        new HtmlWebpackPlugin( {
-            filename: "index.html", 
-            template: "./src/index.html"},),
-            template: "./src/index.html"},),
-                        new HtmlWebpackPlugin( {
-            filename: "index.html", 
-            template: "./src/index.html"},),
-            template: "./src/index.html"},),
-                        new HtmlWebpackPlugin( {
-            filename: "index.html", 
-            template: "./src/index.html"},),
-            template: "./src/index.html"},),
-                        new HtmlWebpackPlugin( {
-            filename: "index.html", 
-            template: "./src/index.html"},),
-            template: "./src/index.html"},),
-
             */
         new MiniCssExtractPlugin(),
     ],

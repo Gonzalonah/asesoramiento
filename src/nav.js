@@ -5,9 +5,17 @@ export default function head(){
     ReactDOM.render(
         <ul>
          <li className="text" id = "home">Home</li>
-         <li id="html" className = "text">Dibujo Técnico</li>
-         <li id="wi" className = "text">¿Qué es?</li>
-         <li id="ent" className="text">Entorno de trabajo</li>
-         <li id="estr" className = "text">Lineas</li>
+         <li id="html" className = "text">PSeInt</li>
+         <li id="wi" className = "text">C#</li>
+         <li id="ent" className="text">C++</li>
+         <li id="estr" className = "text">PHP</li>
+         <li id="htm" className = "text">Sistemas ABM</li>
+       
+
         </ul>, document.getElementById("nav")
     )};
+
+      /*<li id="head" className = "text">Tablas de verdad</li>
+         <li id="body" className = "text">Diagrama de Venn</li>
+         <li id="eti" className="text">Etiquetas de texto</li>
+         <li id="lyt" className = "text">Listas y tablas</li>*/

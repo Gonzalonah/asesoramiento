@@ -8,7 +8,7 @@ ReactDOM.render(
     <div id="stheader">
     <header id = "stheaders">
         <img src = {cabe} className = "header" id="header"></img>
-        <section className="materia">Lenguajes Tecnológicos</section>
+        <section className="materia">Laboratorio de Programación</section>
     </header>
 </div>, document.getElementById("header")
 )};
