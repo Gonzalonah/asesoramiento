@@ -6,7 +6,7 @@ export default function nav (){
     <>
          <div>
              <a id="about">
-                 <img src={log} id="logo"></img>
+                 <img src={log} id="logo" alt="gonzalo nahuel rolon" ></img>
              </a>
          </div>
          <>

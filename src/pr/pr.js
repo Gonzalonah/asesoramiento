@@ -3,13 +3,13 @@ import React from "react";
 import $ from "jquery";
 
 //----------------------------CSS----------------------------
-import "./style.css";
+import "../style.css";
 
 //--------------------------MODULES--------------------------
-import foote from "./footer.js";
-import head from "./header.js";
-import nav from "./nav.js";
-import main from "./main.js";
+import foote from "../footer.js";
+import head from "../header.js";
+import nav from "../nav.js";
+import main from "../main.js";
 
 //---------------------------CALLS---------------------------
 foote();
@@ -23,7 +23,7 @@ var h =0,h1 =0,w =0,e =0,es =0,ht =0,he =0,b =0,et =0,ly =0,l =0,t =0,lis=0,list
 //.....................hidens & showders.....................
 
 $(function(){
-    //$("#homes").hide();
+   //$("#homes").hide();
     $("#htmls").hide();
     $("#wis").hide();
     $("#ents").hide();
@@ -81,7 +81,7 @@ $(document).on('click', '#header', function(){
     $(document).on('click', '#wi', function(){
         if (w==0){
             $("#wis").show(1500);
-            $("#htmls").hide(1500);
+            //$("#htmls").hide(1500);
             $("#homes").hide(1500);
             $("#ents").hide(1500);
             $("#estrs").hide(1500);
@@ -100,7 +100,7 @@ $(document).on('click', '#header', function(){
     $(document).on('click', '#ent', function(){
         if (e==0){
             $("#ents").show(1500);
-            $("#htmls").hide(1500);
+            //$("#htmls").hide(1500);
             $("#homes").hide(1500);
             $("#wis").hide(1500);
             $("#estrs").hide(1500);
@@ -119,7 +119,7 @@ $(document).on('click', '#header', function(){
     $(document).on('click', '#estr', function(){
         if (es==0){
             $("#estrs").show(1500);
-            $("#htmls").hide(1500);
+           // $("#htmls").hide(1500);
             $("#homes").hide(1500);
             $("#wis").hide(1500);
             $("#ents").hide(1500);
@@ -164,7 +164,6 @@ $(document).on('click', '#header', function(){
             $("#wis").hide(1500);
             $("#ents").hide(1500);
             $("#estrs").hide(1500);
-
             $("#bodys").hide(1500);
             $("#etis").hide(1500);
             $("#lyts").hide(1500);
@@ -197,7 +196,7 @@ $(document).on('click', '#header', function(){
     $(document).on('click', '#eti', function(){
         if (et==0){
             $("#etis").show(1500);
-            $("#htmls").hide(1500);
+            //$("#htmls").hide(1500);
             $("#homes").hide(1500);
             $("#wis").hide(1500);
             $("#ents").hide(1500);
@@ -278,6 +277,14 @@ $(document).on('click', '#header', function(){
             t1=1;
         }  
     });
+    $(document).on('click', '#volv', function(){
+        $("#htmls").show(1500);
+        $("#bodys").hide(1500);
+    })
+    $(document).on('click', '#zi', function(){
+        $("#htmls").show(1500);
+        $("#bodys").hide(1500);
+    })
     $(document).on('click', '#vol', function(){
         $("#htmls").show(1500);
         $("#htms").hide(1500);
